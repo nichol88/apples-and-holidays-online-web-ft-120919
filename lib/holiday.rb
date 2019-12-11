@@ -53,7 +53,6 @@ def all_supplies_in_holidays(holiday_hash)
     }
   }
 end
-
 def normalize(sym)
   sym = sym.to_s.gsub("_", " ")
   sym = sym.split(" ").map{|e|
