@@ -48,7 +48,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each{ |season, holidays|
     holidays.each{ |holiday, sups|
-      
+
     }
   }
 end
