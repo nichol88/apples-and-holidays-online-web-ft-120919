@@ -55,7 +55,11 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def normalize(sym)
-  sym = sym.to_s
+  sym = sym.to_s.gsub("_", " ")
+  sym = sym.split(" ").map{|e|
+    e.capitalize
+  }
+  sym = sym.join(" ")
 end
 
 def all_holidays_with_bbq(holiday_hash)
