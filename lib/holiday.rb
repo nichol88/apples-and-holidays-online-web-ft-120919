@@ -67,7 +67,8 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each{ |season, hols|
     hols.each.collect{ |hol, sups|
       if sups.include?("BBQ")
-
+        hol
+      end
     }
   }
 end
